@@ -51,8 +51,8 @@ while playing:
             playing = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             pos = pygame.mouse.get_pos()
-            column = pos[1] / (grid_width + grid_margin)
-            row = pos[0] / (grid_height + grid_margin)
+            column = pos[1] // (grid_width + grid_margin)
+            row = pos[0] // (grid_height + grid_margin)
             if event.button == 1:
                 # left click
                 if grid[row][column] != '1':

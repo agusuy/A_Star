@@ -71,8 +71,8 @@ def a_star(start_xy, goal_xy, grid, cost=cost_default, heuristic=heuristic_defau
 def get_adjacent(grid, x, y):
 
     return [Node(j, i)
-            for i in xrange(y - 1, y + 2) if 0 <= i < len(grid)
-            for j in xrange(x - 1, x + 2) if 0 <= j < len(grid[0])
+            for i in range(y - 1, y + 2) if 0 <= i < len(grid)
+            for j in range(x - 1, x + 2) if 0 <= j < len(grid[0])
             if (i != y) != (j != x) and grid[i][j] != '0']
 
 
