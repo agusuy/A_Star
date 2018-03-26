@@ -27,7 +27,7 @@ pygame.init()
 
 size = [255, 255]
 window = pygame.display.set_mode(size)
-pygame.display.set_caption("manhathan")
+pygame.display.set_caption("A*")
 
 playing = True
 clock = pygame.time.Clock()

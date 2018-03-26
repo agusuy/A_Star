@@ -4,3 +4,7 @@
 AStar/\.idea/
 
 *.pyc
+
+\.idea/
+
+venv/
