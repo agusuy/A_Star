@@ -1,4 +1,6 @@
 # coding=utf-8
+from constants import OBSTACLE
+
 __author__ = 'Agustin Castillo'
 
 
@@ -73,7 +75,7 @@ def get_adjacent(grid, x, y):
     return [Node(j, i)
             for i in range(y - 1, y + 2) if 0 <= i < len(grid)
             for j in range(x - 1, x + 2) if 0 <= j < len(grid[0])
-            if (i != y) != (j != x) and grid[i][j] != '0']
+            if (i != y) != (j != x) and grid[i][j] != OBSTACLE]
 
 
 def choose(reachable, heuristic, goal):
