@@ -1,7 +1,4 @@
-# coding=utf-8
 from constants import OBSTACLE
-
-__author__ = 'Agustin Castillo'
 
 
 class Node:
